@@ -1,0 +1,7 @@
+-- Problem: https://leetcode.com/problems/customers-who-never-order/?envType=study-plan&id=sql-i
+-- Result: Accepted
+
+
+SELECT c.name AS 'Customers'
+FROM Customers c
+WHERE c.id NOT IN (SELECT o.customerId FROM Orders o)
