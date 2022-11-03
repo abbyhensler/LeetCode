@@ -1,0 +1,7 @@
+-- Problem: https://leetcode.com/problems/find-customer-referee/?envType=study-plan&id=sql-i
+-- Result: Accepted
+
+
+SELECT name
+FROM Customer
+WHERE referee_id != 2 OR referee_id IS NULL
