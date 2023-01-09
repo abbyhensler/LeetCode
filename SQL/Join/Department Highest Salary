@@ -1,0 +1,9 @@
+-- Problem: https://leetcode.com/problems/department-highest-salary/submissions/800888831/
+-- Result: Accepted
+
+
+SELECT d.name AS Department, e1.name AS Employee, e1.salary AS Salary
+FROM Department d
+LEFT JOIN Employee e1
+ON d.id = e1.departmentId
+WHERE e1.salary = (SELECT MAX(Salary) FROM Employee e2 WHERE e2.departmentId = e1.departmentId)
