@@ -1,6 +1,0 @@
--- Problem: https://leetcode.com/problems/swap-salary/?envType=study-plan&id=sql-i
--- Result: Accepted
-
-
-UPDATE Salary
-SET sex = IF(sex = 'f', 'm', 'f')
