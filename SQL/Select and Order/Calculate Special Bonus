@@ -1,7 +1,0 @@
--- Problem: https://leetcode.com/problems/calculate-special-bonus/?envType=study-plan&id=sql-i
--- Result: Accepted
-
-
-SELECT employee_id, (IF(employee_id % 2 != 0 AND name NOT LIKE 'M%', salary, 0)) as 'bonus'
-FROM Employees
-ORDER BY employee_id
