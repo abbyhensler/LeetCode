@@ -1,7 +1,0 @@
--- Problem: https://leetcode.com/problems/second-highest-salary/
--- Result: Accepted
-
-
-SELECT MAX(salary) AS SecondHighestSalary
-FROM employee
-WHERE salary < (SELECT MAX(salary) FROM employee)
